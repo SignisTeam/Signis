@@ -20,11 +20,12 @@
 from gi.repository import Adw
 from gi.repository import Gtk
 
-@Gtk.Template(resource_path='/com/github/SignisTeam/signis/window.ui')
+from .constants import rootdir, app_id, build_type
+
+@Gtk.Template(resource_path=f"{rootdir}/ui/window.ui")
 class SignisWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'SignisWindow'
 
-    label = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)

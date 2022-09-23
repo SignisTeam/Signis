@@ -53,10 +53,10 @@ class SignisApplication(Adw.Application):
         about = Adw.AboutWindow(transient_for=self.props.active_window,
                                 application_name='signis',
                                 application_icon='com.github.SignisTeam.signis',
-                                developer_name='User',
+                                developer_name='Signis Team',
                                 version='0.1.0',
-                                developers=['User'],
-                                copyright='© 2022 User')
+                                developers=['0xMRTT'],
+                                copyright='© 2022 Signis Team')
         about.present()
 
     def on_preferences_action(self, widget, _):
@@ -79,7 +79,7 @@ class SignisApplication(Adw.Application):
             self.set_accels_for_action(f"app.{name}", shortcuts)
 
 
-def main(version):
+def main():
     """The application's entry point."""
     app = SignisApplication()
     return app.run(sys.argv)
