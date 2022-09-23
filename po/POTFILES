@@ -1,0 +1,6 @@
+data/com.github.SignisTeam.signis.desktop.in
+data/com.github.SignisTeam.signis.appdata.xml.in
+data/com.github.SignisTeam.signis.gschema.xml
+src/main.py
+src/window.py
+src/window.ui

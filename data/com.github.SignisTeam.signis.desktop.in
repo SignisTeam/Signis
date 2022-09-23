@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=signis
+Exec=signis
+Icon=com.github.SignisTeam.signis
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
